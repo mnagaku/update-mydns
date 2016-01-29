@@ -8,6 +8,6 @@ RUN \
 CMD \
   while true; \
   do \
-    curl --user mydns999380:S9V73qxgCfZ http://www.mydns.jp/login.html; \
-    sleep 60; \
+    curl --user $user:$pass http://www.mydns.jp/login.html; \
+    sleep $interval; \
   done

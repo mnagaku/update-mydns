@@ -1,3 +1,0 @@
-mydns:
-  image: wh11e7rue/mydns
-  restart: always

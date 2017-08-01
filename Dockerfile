@@ -1,10 +1,5 @@
-FROM ubuntu:15.10
-MAINTAINER wh11e7rue <wh11e7rue@icloud.com>
-
-RUN \
-  apt-get update && \
-  apt-get install -y curl
-
+FROM alpine
+RUN apk --update add curl && rm -rf /var/cache/apk/*
 CMD \
   while true; \
   do \
